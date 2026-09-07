@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Prestron</title>
+  <meta name="description" content="Contact Prestron, a technology product house in Kampala, Uganda, at contact@prestron.com.">
+  <link rel="canonical" href="https://prestron.com/contact.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Contact — Prestron">
+  <meta property="og:description" content="Contact Prestron, a technology product house in Kampala, Uganda, at contact@prestron.com.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://prestron.com/contact.html">
+  <meta property="og:site_name" content="Prestron">
+
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="logo" href="/">PRESTRON</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle navigation">
+        <span class="nav-toggle__icon" aria-hidden="true"></span>
+      </button>
+      <nav id="main-nav" class="main-nav" aria-label="Main">
+        <ul class="main-nav__list">
+          <li><a href="/">Home</a></li>
+          <li><a href="/what-we-build.html">What We Build</a></li>
+          <li><a href="/approach.html">Approach</a></li>
+          <li><a href="/contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Minimalism is the moment: one quiet column, nothing competing. -->
+    <header class="contact-hero page-hero">
+      <div class="container grid">
+        <h1 class="page-title">Contact</h1>
+        <p class="contact-address"><a href="mailto:contact@prestron.com">contact@prestron.com</a></p>
+      </div>
+    </header>
+
+    <section class="contact-form-wrap" aria-labelledby="form-heading">
+      <div class="container grid">
+        <h2 id="form-heading" class="section-title">Write to us</h2>
+        <form class="contact-form" action="mailto:contact@prestron.com" method="get" enctype="text/plain" novalidate>
+          <div class="form-field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name" placeholder="Your name" required>
+          </div>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" placeholder="you@example.com" required>
+          </div>
+          <div class="form-field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="What are you building, or what is worth solving?" required></textarea>
+          </div>
+          <button class="form-submit" type="submit">Send</button>
+          <span class="form-note mono-ann">Opens your email client — no server behind this form.</span>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__inner">
+        <p class="site-footer__logo">PRESTRON</p>
+        <nav class="site-footer__nav" aria-label="Footer">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/what-we-build.html">What We Build</a></li>
+            <li><a href="/approach.html">Approach</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="site-footer__contact">
+          <a class="mono-ann" style="color:var(--dusk-blue)" href="mailto:contact@prestron.com">contact@prestron.com</a>
+        </div>
+      </div>
+      <div class="site-footer__bottom-bar">
+        <span class="mono-ann">Prestron · Kampala, Uganda</span>
+        <span class="mono-ann">© 2026 Prestron</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js" defer></script>
+</body>
+</html>
