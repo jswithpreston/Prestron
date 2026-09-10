@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import posthog from "posthog-js";
@@ -9,6 +10,7 @@ const links = [
   { href: "/", label: "Home" },
   { href: "/what-we-build", label: "What We Build" },
   { href: "/approach", label: "Approach" },
+  { href: "/faq", label: "FAQ" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -40,8 +42,14 @@ export default function Nav() {
   return (
     <header className="site-header">
       <div className="container site-header__inner">
-        <Link href="/" className="logo">
-          PRESTRON
+        <Link href="/" className="logo" aria-label="Prestron — Home">
+          <Image
+            src="/Prestron_logo2.png"
+            alt=""
+            width={28}
+            height={28}
+            priority
+          />
         </Link>
         <button
           className="nav-toggle"

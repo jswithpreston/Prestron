@@ -1,10 +1,14 @@
 import type { Metadata } from "next";
 import { FadeIn, StaggerChildren, StaggerItem } from "@/components/MotionWrapper";
+import CTA from "@/components/CTA";
 
 export const metadata: Metadata = {
   title: "What We Build",
   description:
     "The products Prestron owns, and the custom systems it builds for selective partners.",
+  alternates: {
+    canonical: "/what-we-build",
+  },
 };
 
 export default function WhatWeBuild() {
@@ -86,6 +90,12 @@ export default function WhatWeBuild() {
           </div>
         </FadeIn>
       </section>
+
+      <CTA
+        title="Have a problem worth solving?"
+        text="If you have a real, specific problem that technology could solve meaningfully better, we want to hear about it."
+        label="Start the conversation →"
+      />
     </>
   );
 }

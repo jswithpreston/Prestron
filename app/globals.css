@@ -130,11 +130,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo {
-  font-weight: 700;
-  font-size: 1rem;
-  letter-spacing: 0.1em;
+  display: flex;
+  align-items: center;
   text-decoration: none;
   color: var(--color-ink-black);
+  line-height: 0;
+}
+
+.site-footer__logo-img {
+  height: 28px;
+  width: auto;
 }
 
 .main-nav__list {
@@ -311,6 +316,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   gap: var(--spacing-lg);
 }
 

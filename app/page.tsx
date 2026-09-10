@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "Prestron — Technology Product House, Kampala",
   description:
     "A technology product house built from Uganda — building and owning its own products, and partnering selectively to build custom systems where it can bring exceptional value.",
+  alternates: {
+    canonical: "/",
+  },
 };
 
 export default function Home() {

@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { FadeIn } from "@/components/MotionWrapper";
 import PrinciplesMoment from "@/components/PrinciplesMoment";
+import CTA from "@/components/CTA";
 
 export const metadata: Metadata = {
   title: "Approach",
   description:
     "How Prestron decides what to build, and what it holds itself to.",
+  alternates: {
+    canonical: "/approach",
+  },
 };
 
 export default function Approach() {
@@ -106,6 +110,8 @@ export default function Approach() {
           </div>
         </FadeIn>
       </section>
+
+      <CTA text="The conversation starts with a problem, not a pitch. Tell us what you're trying to solve." />
     </>
   );
 }

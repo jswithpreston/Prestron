@@ -29,8 +29,7 @@ export async function POST(request: Request) {
     //     body: JSON.stringify({ name, email, message }),
     //   });
 
-    console.log("Contact form submission:", { name, email, message });
-
+    // TODO: Wire up email delivery (Resend or Formspree) — see comments above
     return NextResponse.json({ success: true });
   } catch {
     return NextResponse.json(
